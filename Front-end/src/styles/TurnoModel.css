@@ -1,0 +1,54 @@
+.turnoModel-container {
+    display: flex;
+    align-items: top;
+    margin: 10px;
+    max-height: 60px;
+}
+
+.card-turno {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    text-indent: 0px;
+    background-color:rgb(191, 191, 191, 0.1);
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(112, 112, 112);
+    width: 100%;
+    min-height: 40px;
+}
+
+.button-turno {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 5px;
+    border-color:rgb(107, 107, 107);
+    background-color:rgb(21, 16, 103);
+  }
+
+.value-turno {
+    margin: 10px;
+    font-size: 12px;
+    width: 20%;
+}
+
+#especialidad {
+    text-transform: capitalize;
+}
+
+#codigo {
+    width: 10%;
+}
+
+@media (max-width:600px) {
+    .turnoModel-container {
+        margin: 5px;
+        max-height: 80px;
+    }
+    #especialista,  #codigo {
+        display: none;
+    }
+}

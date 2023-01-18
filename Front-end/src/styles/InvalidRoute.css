@@ -1,0 +1,46 @@
+.invalid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #A9D35A;
+    height: 80vh;
+}
+
+#btn-invalid {
+    background-color:#26B5A8;
+    color: white;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+#btn-invalid:hover {
+    background-color:#A9D35A;
+    color: black;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.error404 {
+   width: 400px;
+   height: 400px;
+}
+
+@media (max-width:600px) {
+    .invalid {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #A9D35A;
+        height: 90vh;
+    }
+    .error404 {
+        width: 300px;
+        height: 300px;
+     }
+  }

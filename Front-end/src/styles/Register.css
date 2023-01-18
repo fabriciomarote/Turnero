@@ -1,0 +1,116 @@
+.modal-inputs-register > label {
+  display: flex;
+  text-indent: 10px;
+  font-size:10px;
+  font-weight: 400;
+}
+
+.formModal {
+  margin-top: 20px;
+}
+
+.form-input {
+  margin: 10px;
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  border-top-style:none;
+  border-left-style:none;
+  border-right-style:none;
+  border-bottom-style:inset;
+  border-color: rgb(185, 185, 185);
+}
+
+.form-input2 {
+  margin: 10px;
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  border-color: rgb(185, 185, 185);
+}
+
+.b-register {
+  width: 90%;
+  height: 45px;
+  border-radius: 10px;
+  border-color:#A9D35A;
+  background-color:#A9D35A;
+  color: black;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: -10px;
+}
+
+.b-register:hover {
+  border-color:#26B5A8;
+  background-color:#26B5A8;
+}
+
+#alert-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 85%;
+  font-size: 13px;
+  margin: 25px 0px 0px 30px;
+}
+
+.modalFooter-register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  color: white;
+  font-weight: 700;
+}
+
+.button-modal-footer {
+  color: black;
+  margin: 20px;
+}
+
+@media (max-width:600px) {
+  .formModal {
+    margin-top: 5px;
+  }
+  
+  .form-input {
+    height: 35px;
+    font-size: 15px;
+  }
+  
+  .form-input2 {
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .b-register {
+    width: 70%;
+    height: 40px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+  #alert-register {
+    width: 100%;
+    font-size: 12px;
+    margin: 15px 0px 10px 0px;
+  }
+
+  .modalFooter-register {
+    margin-top: 10px;
+    margin-bottom: -40px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .button-modal-footer {
+    color: black;
+    margin: 20px;
+  }
+}

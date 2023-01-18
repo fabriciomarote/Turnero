@@ -1,0 +1,123 @@
+.turno-container {
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    color: white;
+}
+
+.title-turno {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+    font-size: 45px;
+    color: white;
+}
+
+.card-turno {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-turno {
+    width: 1200px;
+    background-color: rgb(60, 68, 120);
+    border-style:groove;
+    border-color: white;
+    border-width:2px;
+    border-radius: 5px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+}
+
+.header-left, .header-right {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.body-left, .body-right {
+    width: 100%;
+    border-style:groove;
+    border-color: white;
+    border-width: 2px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;  
+}
+
+.body-left {
+    font-weight: 900;
+    margin-left: -2px;
+}
+
+.body-right {
+    height: 184px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+    padding-top: 30px;
+    font-weight: 700;
+    margin-right: -2px;
+    margin-left: -1px;
+}
+
+.especialidad-turno, .fecha-turno {
+    text-transform: capitalize;
+}
+
+.footer-turno    {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.button {
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+    margin-right: 150px;
+}
+
+@media (max-width:600px) {
+    .turno-container {
+        margin-top: 100px;
+    }
+    .title-turno {
+        font-size: 25px;
+        text-indent: 10px;
+    }
+    .box-turno {
+        width: 450px;
+        border-width: 2px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    .body-right {
+        height: 163px;
+        font-size: 13px;
+    }
+    .name-hospital {
+        font-size: 13px;
+    }
+  }

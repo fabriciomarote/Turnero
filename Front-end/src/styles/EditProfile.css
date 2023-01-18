@@ -1,0 +1,36 @@
+
+.form-input-edit {
+    margin: 10px;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border-top-style:none;
+    border-left-style:none;
+    border-right-style:none;
+    border-bottom-style:inset;
+    border-color: rgb(185, 185, 185);
+}
+
+.name-user {
+    margin-left: -10px;
+}
+
+#alert-edit {
+    width: 90%;
+    font-size: 12px;
+    margin: 10px 0px 0px -20px;
+}
+
+@media (max-width:600px) {
+    .form-input-edit  {
+      height: 30px;
+      font-size: 12px;
+    }
+    #alert-edit {
+      width: 90%;
+      height: 30px;
+      font-size: 11px;
+      font-weight: 900;
+      margin: 10px 0px 0px -20px;
+    }
+  }

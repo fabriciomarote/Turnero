@@ -1,0 +1,88 @@
+.hospitalModel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: groove;
+    border-radius: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-image: url("https://media.istockphoto.com/photos/modern-hospital-waiting-area-picture-id1271513472?k=20&m=1271513472&s=170667a&w=0&h=izc-yyZ4TnYJTAwxh-_OgOOrfHN29CPocLF17bFAnnU=");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: cover;
+    cursor: pointer;
+    color: black;;
+}
+
+.hospitalModel-container:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.selection-name {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.name-selection {
+    display: grid;
+    padding: 5px;
+    text-align: center;
+}
+
+.alert-turnos-2 {
+    color: red;
+    margin: 0px 0px 0px 0px;
+    font-weight: 800;
+    font-size: 15px;
+    -webkit-text-stroke: 1px black;
+}
+
+@media (max-width:600px) {
+    .hospitalModel-container {
+        border-radius: 20px;
+        margin:10px;
+        width: 220px;
+        height: 130px;
+        margin-top: 50px;
+    }
+    .hospitalModel-container:hover {
+        transform: none;
+        opacity:unset;
+    }
+    .selection-name {
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        -webkit-text-stroke: 0.2px white;
+    }
+    
+    .name-selection {
+        padding: 3px;
+    }
+    
+    .alert-turnos-2 {
+        color: red;
+        margin: 0px 0px 0px 0px;
+        font-weight: 800;
+        font-size: 11px;
+        -webkit-text-stroke: 0.5px black;
+    }
+  }
+  

@@ -1,0 +1,155 @@
+.profile-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+    color: rgb(255, 255, 255);
+}
+
+.profile-dates , .profile-turnos {
+    width: 1370px;
+    background: radial-gradient(circle, rgba(24, 22, 80, 0.5) 10%, rgba(19, 17, 69, 0.5)48%, rgba(24, 20, 81, 0.5) 91%);
+    justify-content: left;
+    margin: 10px;
+    border-radius: 10px;
+    border-style:groove;
+    border-color: rgba(47, 47, 115, 0.742);
+    text-align: justify;
+}
+
+.image {
+    border-radius: 10px;
+    border-style:solid;
+    border-color: rgba(172, 172, 172, 0.3);
+    width: 150px;
+    height: 145px;
+}
+
+.dates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 20px;
+    text-indent: 5px;  
+}
+
+.box-left {
+    height: 100%;
+    margin-left: -150px;
+}
+
+.box-right {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items:flex-end;  
+}
+
+.user-name {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.info {
+    display: flex; 
+    text-indent: 5px;
+}
+
+.info-title {
+    font-weight: 700;
+}
+
+.profile-turnos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 380px; 
+}
+
+.profile-dates {
+    height: 170px;
+    display: flex;
+    line-height:20px;
+    padding: 10px;
+}
+
+.ask {
+    font-size: 20px;
+}
+
+.modal-body-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.button-profile {
+    color: black;
+    font-weight: 700;
+    width: 100px;
+    height: 30px;
+    margin: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+    border-color:#A9D35A;
+    background-color:#A9D35A;
+    font-family: 'Roboto', sans-serif;
+}
+
+#confirm {
+    font-size: 10px;
+    padding: 2px;
+    border-color:#A9D35A;
+    background-color:#A9D35A;
+}
+
+#confirm:hover {
+    border-color:#26B5A8;
+    background-color:#26B5A8;
+}
+
+.message-cuenta {
+    font-size: 13px;
+}
+
+@media (max-width:600px) {
+    .profile-container {
+        margin-top: 80px;
+        padding: 30px;
+    }
+    
+    .profile-dates , .profile-turnos {
+        width: 450px;
+        margin: 5px;
+    }
+    .profile-dates {
+        height: 125px;
+        line-height:10px;
+    }
+    .dates {
+        text-indent: 15px;
+        width: 78%;
+    }
+    .box-right {
+        display: grid;
+    }
+    .image {
+        border-radius: 10px;
+        border-style:solid;
+        border-color: rgba(172, 172, 172, 0.3);
+        width: 100px;
+        height: 100px;
+    }
+    .box-left {
+        font-size: 11px;
+        margin-left: -25px;
+    }
+    .user-name {
+        font-weight: 900;
+        font-size: 15px;
+        margin-left: -10px;
+    }
+    
+}
