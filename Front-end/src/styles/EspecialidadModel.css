@@ -39,7 +39,7 @@
 
 @media (min-width: 1200px) {
     .especialidad-container{
-        width: 1500px;
+        width: 100%;
     }
     .block-pad {
         width: 100%;
