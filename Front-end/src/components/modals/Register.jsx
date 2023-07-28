@@ -99,7 +99,7 @@ export default Register;
 
   const ContenedorModal = styled.div`
     width: 500px;
-    height: 750px;
+    height: 680px;
     background: rgba(24, 22, 80, 0.7);
     position: relative;
     display: grid;
@@ -161,7 +161,7 @@ export default Register;
     color: #fff;
     border: none;
     margin: 10px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 900;
     background-color: transparent;
     cursor: pointer;

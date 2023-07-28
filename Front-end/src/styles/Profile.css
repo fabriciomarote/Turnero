@@ -64,8 +64,8 @@
 .profile-turnos {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    min-height: 380px; 
+    padding: 5px;
+    min-height: 350px; 
 }
 
 .profile-dates {
