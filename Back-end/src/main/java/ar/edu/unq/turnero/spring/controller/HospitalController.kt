@@ -4,7 +4,6 @@ import ar.edu.unq.turnero.service.HospitalService
 import ar.edu.unq.turnero.spring.controller.DTOs.MiniHospitalDTO
 import ar.edu.unq.turnero.spring.controller.DTOs.HospitalDTO
 import ar.edu.unq.turnero.spring.controller.DTOs.TurnoDTO
-import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController
