@@ -1,0 +1,19 @@
+# Build y cache local
+target/
+build/
+.gradle/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Documentación y otros
+*.md
+.DS_Store

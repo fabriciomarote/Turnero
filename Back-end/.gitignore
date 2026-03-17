@@ -30,7 +30,7 @@ hs_err_pid*
 /target
 /data/*
 build/*
-/src/main/java/ar/edu/unq/turnero/service/TwilioAccount.kt
+/src/main/kotlin/ar/edu/unq/turnero/service/TwilioAccount.kt
 
 .run
 .jpb/
