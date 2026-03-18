@@ -12,9 +12,14 @@ class WebConfig : WebMvcConfigurer {
     private lateinit var allowedOrigins: String
 
     override fun addCorsMappings(registry: CorsRegistry) {
+        val origins = allowedOrigins.split(",").map { it.trim() }.filter { it.isNotEmpty() }.toTypedArray()
         registry.addMapping("/**")
-            .allowedOrigins(*allowedOrigins.split(",").map { it.trim() }.toTypedArray())
-            .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+            .allowedOrigins(*origins)
+            .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
+            .allowedHeaders("*")
+            .exposedHeaders("Authorization", "Content-Type")
+            .maxAge(3600)
+            // No usar origins ["*"] en @CrossOrigin junto con esto: el preflight OPTIONS falla (403).
             .allowCredentials(true)
     }
 }

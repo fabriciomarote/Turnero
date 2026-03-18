@@ -1,0 +1,40 @@
+# Desde la raíz del repo: docker compose up --build
+# API_PUBLIC_URL = URL del back que ve el navegador (no uses http://app:8080).
+# Por defecto coincide con el mapeo "8083:8080" del servicio app.
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:4.4.21
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  app:
+    build:
+      context: ./Back-end
+      dockerfile: Dockerfile
+    container_name: turnero-back
+    ports:
+      - "8083:8080"
+    depends_on:
+      - mongo
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://host.docker.internal:27017/turnero
+
+  front:
+    build:
+      context: ./Front-end
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_API_URL: ${API_PUBLIC_URL:-http://localhost:8083}
+    container_name: turnero-front
+    ports:
+      - "${FRONT_PORT:-3000}:80"
+    depends_on:
+      - app
+
+volumes:
+  mongo_data:

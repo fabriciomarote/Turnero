@@ -14,7 +14,6 @@ import java.time.format.DateTimeFormatter
 
 
 @RestController
-@CrossOrigin
 class SMSController(private val service: SMSService) {
 
     @Autowired

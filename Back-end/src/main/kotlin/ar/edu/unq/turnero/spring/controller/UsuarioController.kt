@@ -14,7 +14,6 @@ import javax.naming.directory.InvalidAttributesException
 import javax.servlet.http.HttpServletResponse
 
 @RestController
-@CrossOrigin(origins = ["*"], allowedHeaders = ["*"])
 @RequestMapping("/usuario")
 class UsuarioController(private val usuarioService: UsuarioService) {
 
